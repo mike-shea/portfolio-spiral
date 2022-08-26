@@ -5,10 +5,10 @@ module.exports = {
     'node': true
   },
   'extends': [
-    'eslint:recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'next',
+    'next/core-web-vitals',
+    'prettier'
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {

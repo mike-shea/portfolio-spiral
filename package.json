@@ -1,6 +1,6 @@
 {
-  "name": "blank-template-v01-nextjs",
-  "version": "0.1.0",
+  "name": "blank-template-v1-nextjs",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
