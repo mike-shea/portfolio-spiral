@@ -21,7 +21,7 @@ export default function Cursor() {
           alt="red-cloud-spin"
           priority={true}
           layout="fill"
-          src="/../public/red-cloud.png"
+          src="red-cloud.png"
         />
       </div>
     </>
