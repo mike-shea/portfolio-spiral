@@ -6,10 +6,10 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <h1 className="text-center font-benguia text-3xl font-medium text-white lg:font-glodok lg:text-6xl lg:leading-tight">
-        I&apos;m Nakiska, <br />
-        creative director & <br />
-        experience designer <br />
-        based in Brooklyn.
+        I&apos;m an <br />
+        example of using <br />
+        motion framer <br />
+        for transitions.
       </h1>
     </Layout>
   );

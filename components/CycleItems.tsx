@@ -9,7 +9,7 @@ export default function CycleItems(props: { itemsArray: string[] }) {
       if (!newState) return [''];
       let firstItem = newState.shift();
       if (firstItem === '') {
-        firstItem = newState.shift();
+        return newState;
       }
       if (firstItem === undefined) return ['error'];
       newState.push(firstItem);
@@ -18,7 +18,7 @@ export default function CycleItems(props: { itemsArray: string[] }) {
   }
 
   useEffect(() => {
-    const cycleItems = setInterval(nextItems, 800);
+    const cycleItems = setInterval(nextItems, 1000);
 
     return () => {
       clearInterval(cycleItems ?? 0);

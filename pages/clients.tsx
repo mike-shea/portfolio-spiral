@@ -18,12 +18,19 @@ const clientsArray = [
   'United Airlines'
 ];
 
+const exampleArray = [
+  'Company 1',
+  'Company 2',
+  'Company 3',
+  'etc',
+]
+
 const Services: NextPage = () => {
   return (
     <Layout>
       <div className="flex w-full flex-col items-center justify-start gap-2 px-4 md:gap-6">
-        <p className="font-mono text-sm text-white">some rad brands I&apos;ve worked with...</p>
-        <CycleItems itemsArray={clientsArray} />
+        <p className="font-mono text-sm text-white"> An example of cycling items...</p>
+        <CycleItems itemsArray={exampleArray} />
       </div>
     </Layout>
   );
