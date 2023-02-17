@@ -34,7 +34,7 @@ export default function VideoPlayer() {
         controls
         autoPlay
         className="w-auto">
-        <source src={`./video.mp4#t=${contextState.startTime}`} type="video/mp4" />
+        <source src={`/video.mp4#t=${contextState.startTime}`} type="video/mp4" />
       </video>
     </div>
   );
