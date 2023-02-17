@@ -6,7 +6,6 @@ import Cursor from './Cursor';
 import HomepageLink from './HomepageLink';
 import { NakiskaLogoSvg } from './IconComponents';
 import VideoPlayer from './VideoPlayer';
-import { MouseProvider } from '../contexts/mouse-context';
 
 export default function Layout(props: { children: React.ReactNode }) {
   const contextState = useContext(MouseContext);
