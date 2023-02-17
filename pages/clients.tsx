@@ -3,20 +3,20 @@ import type { NextPage } from 'next';
 import Layout from '../components/Layout';
 import CycleItems from '../components/CycleItems';
 
-const clientsArray = [
-  '',
-  'Audi',
-  'HBO',
-  'Showtime',
-  'Netflix',
-  'Amazon',
-  'The Wall Street Journal',
-  'Barbie',
-  'Motorola',
-  'Pratt Institute',
-  'Uber',
-  'United Airlines'
-];
+// const clientsArray = [
+//   '',
+//   'Audi',
+//   'HBO',
+//   'Showtime',
+//   'Netflix',
+//   'Amazon',
+//   'The Wall Street Journal',
+//   'Barbie',
+//   'Motorola',
+//   'Pratt Institute',
+//   'Uber',
+//   'United Airlines'
+// ];
 
 const exampleArray = [
   'Company 1',

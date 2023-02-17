@@ -3,29 +3,29 @@ import type { NextPage } from 'next';
 import Layout from '../components/Layout';
 import CycleItems from '../components/CycleItems';
 
-const abilitiesArray = [
-  '',
-  'Creative Direction',
-  'Brand Strategy',
-  'Interaction Design',
-  'Event Production',
-  'Persona Mapping',
-  'Package Design',
-  'Hybrid Digital Experiences',
-  'Metascapes',
-  'Information Architecture',
-  'Prototyping',
-  'Audio/visual Experiments',
-  'Journey Mapping',
-  'Set Design',
-  'Engagement Strategy',
-  'Art Direction',
-  'Product Staging',
-  'Marketing Strategy',
-  'Color Theory',
-  'Digital Illustration',
-  'Data Visualization'
-];
+// const abilitiesArray = [
+//   '',
+//   'Creative Direction',
+//   'Brand Strategy',
+//   'Interaction Design',
+//   'Event Production',
+//   'Persona Mapping',
+//   'Package Design',
+//   'Hybrid Digital Experiences',
+//   'Metascapes',
+//   'Information Architecture',
+//   'Prototyping',
+//   'Audio/visual Experiments',
+//   'Journey Mapping',
+//   'Set Design',
+//   'Engagement Strategy',
+//   'Art Direction',
+//   'Product Staging',
+//   'Marketing Strategy',
+//   'Color Theory',
+//   'Digital Illustration',
+//   'Data Visualization'
+// ];
 
 const loremIpsumArray = [
   '',

@@ -7,7 +7,7 @@ export default function CycleItems(props: { itemsArray: string[] }) {
     setItems((prevState) => {
       const newState = structuredClone(prevState);
       if (!newState) return [''];
-      let firstItem = newState.shift();
+      const firstItem = newState.shift();
       if (firstItem === '') {
         return newState;
       }
