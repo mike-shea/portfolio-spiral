@@ -4,7 +4,12 @@ import { motion } from 'framer-motion';
 import useMeasure from 'react-use-measure';
 import useWindowBox from '../hooks/useWindowBox';
 import type { Variants } from 'framer-motion';
-import { motionBlackCloud, motionRedCircle } from '../data/loaderAnimation/loaderAnimation4';
+import {
+  motionBlackCloud,
+  motionRedCircle,
+  variantCount,
+  VariantType
+} from '../data/loaderAnimation/loaderAnimation4';
 
 import blackCloudPng from '/public/black-cloud.png';
 import redCirclePng from '/public/red-circle.png';
@@ -46,6 +51,10 @@ function ImageBox(props: {
   );
 }
 
+function getTypedKeys<T extends object>(obj: T): Array<keyof T> {
+  return Object.keys(obj) as Array<keyof T>;
+}
+
 export default function CloudLoader(props: { children: React.ReactNode }) {
   const [ref, bounds] = useMeasure();
   const boxSize = useWindowBox(bounds);
@@ -62,30 +71,24 @@ export default function CloudLoader(props: { children: React.ReactNode }) {
         ref={ref}
         style={{ willChange: 'transform' }}
         className="pointer-events-none absolute top-0 left-0 right-0 bottom-0 z-30 overflow-hidden">
-        {(
-          Object.keys(motionRedCircle.variants) as Array<keyof typeof motionRedCircle.variants>
-        ).map((circle) => {
-          return (
-            <ImageBox
-              loadHash={redCircleLoadHash}
-              key={`redCircle-${circle}`}
-              id={`redCircle-${circle}`}
-              src={redCirclePng.src}
-              variants={motionRedCircle.variants[circle]}
-              boxSize={boxSize}
-            />
-          );
-        })}
-        {(
-          Object.keys(motionBlackCloud.variants) as Array<keyof typeof motionBlackCloud.variants>
-        ).map((cloud) => {
+        {getTypedKeys(motionRedCircle).map((circle) => (
+          <ImageBox
+            loadHash={redCircleLoadHash}
+            key={`redCircle-${circle}`}
+            id={`redCircle-${circle}`}
+            src={redCirclePng.src}
+            variants={motionRedCircle[circle] ?? {}}
+            boxSize={boxSize}
+          />
+        ))}
+        {getTypedKeys(motionBlackCloud).map((cloud) => {
           return (
             <ImageBox
               loadHash={blackCloudLoadHash}
               key={`blackcloud-${cloud}`}
               id={`blackcloud-${cloud}`}
               src={blackCloudPng.src}
-              variants={motionBlackCloud.variants[cloud]}
+              variants={motionBlackCloud[cloud] ?? {}}
               boxSize={boxSize}
             />
           );
